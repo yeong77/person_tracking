@@ -12,9 +12,12 @@ roslaunch scout_bringup scout_mini_robot_base.launch
 ```
 - Run tracking node
 ```
+rosrun herobot teleop_twist_keyboard.py
+```
+- Run yolov5 node
+```
 roslaunch ultralytics_ros tracker.launch
 ```
-
 - Run usb cam (before run this, install usb_cam package)
 ```
  roslaunch usb_cam usb_cam.launch
